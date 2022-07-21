@@ -12,9 +12,7 @@ cd minio-druid/
 make image
 docker-compose build
 docker-compose up -d
-cd ../
-git clone https://github.com/apache/superset.git
-cd superset/
+cd ../superset/
 docker-compose -f docker-compose-non-dev.yml pull
 docker-compose -f docker-compose-non-dev.yml up -d
 cd ../
